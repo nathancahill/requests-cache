@@ -7,11 +7,9 @@
     Classes and functions for cache persistence
 """
 
-from .sqlite import DbCache
 from .base import BaseCache
 
 registry = {
-    'sqlite': DbCache,
     'memory': BaseCache,
 }
 try:
